@@ -7,18 +7,18 @@ const ContactSection = () => {
   };
 
   const handleEmail = () => {
-    window.location.href = 'mailto:hello@signaturesourdough.com';
+    window.location.href = 'mailto:ben@forgeheart.run';
   };
 
   return (
-    <section className="py-20 px-4 bg-cream-100">
+    <section className="py-20 px-4 bg-cream-50">
       <div className="max-w-3xl mx-auto">
-        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 text-center">
+        <div className="bg-cream-200 border border-cream-300 rounded-2xl shadow-lg p-8 md:p-12 text-center">
           <h2 className="text-3xl md:text-4xl font-inter font-semibold text-earth-700 mb-8">
-            Order or Ask a Question
+            Place an Order or Ask a Question
           </h2>
           <p className="text-lg md:text-xl font-inter text-earth-600 leading-relaxed mb-10">
-            Text me via WhatsApp or drop me an email — I'll get back to you soon.
+            Text Nadine on WhatsApp or email her directly. She replies personally — no bots, no forms.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
             <button 

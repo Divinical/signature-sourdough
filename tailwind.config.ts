@@ -21,6 +21,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'inter': ['Inter', 'sans-serif'],
+				'dancing': ['Dancing Script', 'cursive'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -69,6 +70,16 @@ export default {
 					500: '#6b5b47',
 					600: '#4a3f35',
 					700: '#3a332a',
+				},
+				rust: {
+					400: '#b87333',
+					500: '#a0632b',
+					600: '#8b4513',
+				},
+				olive: {
+					400: '#8b9a5b',
+					500: '#7a8a4f',
+					600: '#697943',
 				}
 			},
 			borderRadius: {

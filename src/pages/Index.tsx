@@ -2,7 +2,8 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
 import MenuSection from '../components/MenuSection';
-import AboutSection from '../components/AboutSection';
+import AboutModal from '../components/AboutModal';
+import ImageCarousel from '../components/ImageCarousel';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
@@ -11,7 +12,8 @@ const Index = () => {
     <div className="font-inter">
       <HeroSection />
       <MenuSection />
-      <AboutSection />
+      <AboutModal />
+      <ImageCarousel />
       <ContactSection />
       <Footer />
     </div>
