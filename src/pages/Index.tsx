@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection';
 import MenuSection from '../components/MenuSection';
 import AboutModal from '../components/AboutModal';
@@ -10,6 +11,7 @@ import Footer from '../components/Footer';
 const Index = () => {
   return (
     <div className="font-inter">
+      <Navigation />
       <HeroSection />
       <MenuSection />
       <AboutModal />
