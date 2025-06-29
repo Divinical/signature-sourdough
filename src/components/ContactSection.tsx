@@ -7,7 +7,7 @@ const ContactSection = () => {
   };
 
   const handleEmail = () => {
-    window.location.href = 'mailto:ben@forgeheart.run';
+    window.location.href = 'mailto:Nadine12xx@gmail.com';
   };
 
   return (
