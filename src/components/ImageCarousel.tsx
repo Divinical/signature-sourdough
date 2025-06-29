@@ -18,32 +18,32 @@ const ImageCarousel = () => {
     { 
       name: "Rustic Sourdough", 
       description: "Thick crust, deep flavour. Traditional and bold.",
-      src: "/assets/rusticsourdoughloaf.webp"
+      src: "/rusticsourdoughloaf.webp"
     },
     { 
       name: "Seeded Sourdough", 
       description: "Packed with seeds and slow-fermented for crunch and depth.",
-      src: "/assets/seeded-sourdough.webp"
+      src: "/seeded-sourdough.webp"
     },
     { 
       name: "Cranberry Raisin", 
       description: "Sweet, tangy, and soft. Great with butter or cheese.",
-      src: "/assets/cranberry-raisin.webp"
+      src: "/cranberry-raisin.webp"
     },
     { 
       name: "Ciabatta Pack", 
       description: "Light, airy, and golden. Best fresh or toasted.",
-      src: "/assets/ciabatta.webp"
+      src: "/ciabatta.webp"
     },
     { 
       name: "Plain Bagels", 
       description: "Chewy and simple. Perfect for breakfast or lunch.",
-      src: "/assets/plain-bagels.webp"
+      src: "/plain-bagels.webp"
     },
     { 
       name: "Sesame Bagels", 
       description: "Same chewy base, topped with toasted sesame seeds.",
-      src: "/assets/sesame-bagels.webp"
+      src: "/sesame-bagels.webp"
     },
   ];
 
