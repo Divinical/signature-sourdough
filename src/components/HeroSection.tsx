@@ -17,7 +17,7 @@ const HeroSection = () => {
           Signature Sourdough
         </h1>
         <p className="text-xl md:text-2xl text-earth-600 font-inter font-light max-w-2xl mx-auto leading-relaxed mb-12">
-          Small batch bread baked with heart in Stornoway.
+          Artisan bread baked with heart in Stornoway.
         </p>
         
         <button 

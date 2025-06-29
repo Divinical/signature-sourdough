@@ -29,7 +29,7 @@ const AboutModal = () => {
             </div>
             <div className="space-y-4 order-1 md:order-2">
               <p className="text-base md:text-lg font-inter text-earth-600 leading-relaxed">
-                <strong className="font-semibold">Nadine bakes from her small kitchen in Stornoway</strong> — just a few loaves at a time, the way she learned from her grandmother.
+                Nadine bakes from her small kitchen in Stornoway, just a few loaves at a time. She's entirely self-taught, learning through trial, error, and love for the process.
               </p>
               <p className="text-base md:text-lg font-inter text-earth-600 leading-relaxed">
                 No gluten-free, no fuss. Just sourdough with real crust and warmth.

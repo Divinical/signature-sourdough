@@ -18,7 +18,7 @@ const ContactSection = () => {
             Place an Order or Ask a Question
           </h2>
           <p className="text-lg md:text-xl font-inter text-earth-600 leading-relaxed mb-10">
-            Text Nadine on WhatsApp or email her directly. She replies personally — no bots, no forms.
+            Text Nadine on WhatsApp or email her directly. She replies personally, no bots, no forms.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
             <button 

@@ -4,44 +4,34 @@ import React from 'react';
 const MenuSection = () => {
   const menuItems = [
     { 
-      name: "Classic Sourdough", 
-      price: "£4",
-      description: "A crusty, slow-fermented white loaf. Chewy, simple, and timeless."
+      name: "Rustic Sourdough", 
+      price: "£5",
+      description: "Thick crust, deep flavour. Traditional and bold."
     },
     { 
       name: "Seeded Sourdough", 
-      price: "£4.50",
-      description: "Packed with sunflower, pumpkin, and sesame seeds for crunch + depth."
+      price: "£6.50",
+      description: "Packed with seeds and slow-fermented for crunch and depth."
     },
     { 
-      name: "Rye & Caraway", 
-      price: "£5",
-      description: "Deep flavour with a hint of spice. Dense and satisfying."
+      name: "Cranberry Raisin", 
+      price: "£6.50",
+      description: "Sweet, tangy, and soft. Great with butter or cheese."
     },
     { 
-      name: "Olive + Herb", 
-      price: "£5",
-      description: "Briny Kalamata olives with rosemary and thyme."
-    },
-    { 
-      name: "Wholemeal Tin", 
+      name: "Ciabatta (Pack of 4)", 
       price: "£4",
-      description: "Straightforward and hearty — an everyday go-to."
+      description: "Light, airy, and golden. Best fresh or toasted."
     },
     { 
-      name: "Spelt Loaf", 
-      price: "£4.50",
-      description: "Nutty flavour and soft texture. Easier on the stomach."
+      name: "Plain Bagels (4 pack)", 
+      price: "£3.50",
+      description: "Chewy and simple. Perfect for breakfast or lunch."
     },
     { 
-      name: "Rustic Crust", 
-      price: "£5",
-      description: "Thick crust, deep bake. Bold flavour for bread purists."
-    },
-    { 
-      name: "Cinnamon Raisin", 
-      price: "£5.50",
-      description: "Sweet, soft, and nostalgic. Best with a pat of butter."
+      name: "Sesame Bagels (4 pack)", 
+      price: "£4",
+      description: "Same chewy base, topped with toasted sesame seeds."
     },
   ];
 

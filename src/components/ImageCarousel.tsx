@@ -12,9 +12,9 @@ const ImageCarousel = () => {
   const images = [
     { name: "Seeded Crust", description: "Fresh seeded sourdough with a golden crust" },
     { name: "Fresh Bake", description: "Warm loaves straight from the oven" },
-    { name: "Cinnamon Twist", description: "Sweet cinnamon raisin sourdough" },
-    { name: "Classic Loaf", description: "Traditional sourdough with perfect crumb" },
-    { name: "Rustic Selection", description: "A variety of handcrafted loaves" },
+    { name: "Cranberry Raisin", description: "Sweet and tangy cranberry raisin sourdough" },
+    { name: "Rustic Loaf", description: "Traditional rustic sourdough with thick crust" },
+    { name: "Bagel Selection", description: "Fresh bagels, plain and sesame varieties" },
   ];
 
   return (

@@ -10,7 +10,7 @@ const AboutSection = () => {
             Meet Nadine
           </h2>
           <p className="text-lg md:text-xl font-inter text-earth-600 leading-relaxed text-center max-w-2xl mx-auto">
-            Nadine has been baking for years — for friends, family, and anyone who loves proper bread. 
+            Nadine has been baking for years for friends, family, and anyone who loves proper bread. 
             Her recipes are traditional, crust-first, and baked fresh every week.
           </p>
         </div>
