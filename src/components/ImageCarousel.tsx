@@ -1,21 +1,64 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 
 const ImageCarousel = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
   const images = [
-    { name: "Seeded Crust", description: "Fresh seeded sourdough with a golden crust" },
-    { name: "Fresh Bake", description: "Warm loaves straight from the oven" },
-    { name: "Cranberry Raisin", description: "Sweet and tangy cranberry raisin sourdough" },
-    { name: "Rustic Loaf", description: "Traditional rustic sourdough with thick crust" },
-    { name: "Bagel Selection", description: "Fresh bagels, plain and sesame varieties" },
+    { 
+      name: "Rustic Sourdough", 
+      description: "Thick crust, deep flavour. Traditional and bold.",
+      src: "/assets/rusticsourdoughloaf.webp"
+    },
+    { 
+      name: "Seeded Sourdough", 
+      description: "Packed with seeds and slow-fermented for crunch and depth.",
+      src: "/assets/seeded-sourdough.webp"
+    },
+    { 
+      name: "Cranberry Raisin", 
+      description: "Sweet, tangy, and soft. Great with butter or cheese.",
+      src: "/assets/cranberry-raisin.webp"
+    },
+    { 
+      name: "Ciabatta Pack", 
+      description: "Light, airy, and golden. Best fresh or toasted.",
+      src: "/assets/ciabatta.webp"
+    },
+    { 
+      name: "Plain Bagels", 
+      description: "Chewy and simple. Perfect for breakfast or lunch.",
+      src: "/assets/plain-bagels.webp"
+    },
+    { 
+      name: "Sesame Bagels", 
+      description: "Same chewy base, topped with toasted sesame seeds.",
+      src: "/assets/sesame-bagels.webp"
+    },
   ];
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
 
   return (
     <section id="gallery" className="py-20 px-4 bg-cream-100">
@@ -23,18 +66,27 @@ const ImageCarousel = () => {
         <h2 className="text-3xl md:text-4xl font-inter font-semibold text-earth-700 mb-12 text-center">
           Fresh from the Oven
         </h2>
-        <Carousel className="w-full max-w-3xl mx-auto" opts={{ align: "start", loop: true }}>
+        <Carousel 
+          setApi={setApi}
+          className="w-full max-w-3xl mx-auto" 
+          opts={{ align: "start", loop: true }}
+        >
           <CarouselContent>
             {images.map((image, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <div className="bg-cream-200 rounded-xl overflow-hidden shadow-md">
-                    <div className="aspect-square bg-cream-300 flex items-center justify-center">
-                      <span className="text-earth-500 font-inter text-center px-4">
-                        {image.name}
-                      </span>
+                    <div className="aspect-square overflow-hidden">
+                      <img 
+                        src={image.src} 
+                        alt={image.name}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <div className="p-4">
+                      <h3 className="text-lg font-inter font-medium text-earth-700 mb-2 text-center">
+                        {image.name}
+                      </h3>
                       <p className="text-sm font-inter text-earth-600 text-center leading-relaxed">
                         {image.description}
                       </p>
@@ -48,10 +100,17 @@ const ImageCarousel = () => {
           <CarouselNext className="bg-cream-200 border-cream-300 hover:bg-cream-300 -right-12" />
         </Carousel>
         
-        {/* Thumbnail dots */}
+        {/* Active indicator dots */}
         <div className="flex justify-center mt-6 space-x-2">
-          {images.map((_, index) => (
-            <div key={index} className="w-2 h-2 rounded-full bg-cream-400"></div>
+          {Array.from({ length: count }, (_, index) => (
+            <button
+              key={index}
+              className={`w-2 h-2 rounded-full transition-colors ${
+                index === current - 1 ? 'bg-earth-600' : 'bg-cream-400'
+              }`}
+              onClick={() => api?.scrollTo(index)}
+              aria-label={`Go to slide ${index + 1}`}
+            />
           ))}
         </div>
       </div>
