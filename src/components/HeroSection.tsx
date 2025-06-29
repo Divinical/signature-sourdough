@@ -18,6 +18,7 @@ const HeroSection = () => {
         </h1>
         <p className="text-xl md:text-2xl text-earth-600 font-inter font-light max-w-2xl mx-auto leading-relaxed mb-12">
           Slowly fermented, traditional sourdough.
+          <br />
           Baked with care in Stornoway
         </p>
         
