@@ -29,10 +29,10 @@ const AboutModal = () => {
             </div>
             <div className="space-y-4 order-1 md:order-2">
               <p className="text-base md:text-lg font-inter text-earth-600 leading-relaxed">
-                Nadine bakes from her small kitchen in Stornoway, just a few loaves at a time. She's entirely self-taught, learning through trial, error, and love for the process.
+                Nadine bakes from her small kitchen in Stornoway, a few loaves at a time. What started as curiosity became ritual. Shaping dough in the quiet, learning by doing, and chasing that perfect crust.
               </p>
               <p className="text-base md:text-lg font-inter text-earth-600 leading-relaxed">
-                No gluten-free, no fuss. Just sourdough with real crust and warmth.
+                She's self-taught. No shortcuts, no trends. Just time, patience, and a love for real bread.
               </p>
             </div>
           </div>
