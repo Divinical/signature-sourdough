@@ -17,9 +17,27 @@ const ContactSection = () => {
           <h2 className="text-3xl md:text-4xl font-inter font-semibold text-earth-700 mb-8">
             Place an Order or Ask a Question
           </h2>
-          <p className="text-lg md:text-xl font-inter text-earth-600 leading-relaxed mb-10">
+          <p className="text-lg md:text-xl font-inter text-earth-600 leading-relaxed mb-6">
             Text Nadine on WhatsApp or email her directly. She replies personally, no bots, no forms.
           </p>
+          
+          <div className="bg-cream-100 border border-cream-300 rounded-xl p-6 mb-8">
+            <h3 className="text-lg font-inter font-semibold text-earth-700 mb-3">
+              Order Timeline
+            </h3>
+            <div className="text-sm md:text-base font-inter text-earth-600 space-y-2">
+              <p>
+                <span className="font-medium">Orders before 3pm:</span> Ready next day
+              </p>
+              <p>
+                <span className="font-medium">Orders after 3pm:</span> Ready in 2 days
+              </p>
+              <p className="text-xs md:text-sm text-earth-500 mt-3">
+                Orders placed after 3pm are included with the next day's batch
+              </p>
+            </div>
+          </div>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
             <button 
               onClick={handleWhatsApp}

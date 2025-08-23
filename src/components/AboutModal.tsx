@@ -17,7 +17,7 @@ const AboutModal = () => {
             Hidden Trigger
           </button>
         </DialogTrigger>
-        <DialogContent className="max-w-4xl w-[95vw] bg-cream-50 border-cream-300 max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-4xl w-[95vw] bg-cream-50 border-cream-300 max-h-[90vh] overflow-y-auto p-4 sm:p-6">
           <DialogHeader>
             <DialogTitle className="text-2xl md:text-3xl font-dancing font-semibold text-earth-700 mb-6">
               Meet Nadine
@@ -29,10 +29,10 @@ const AboutModal = () => {
             </div>
             <div className="space-y-4 order-1 md:order-2">
               <p className="text-base md:text-lg font-inter text-earth-600 leading-relaxed">
-                Nadine bakes from her small kitchen in Stornoway, a few loaves at a time. What started as curiosity became ritual. Shaping dough in the quiet, learning by doing, and chasing that perfect crust.
+                Nadine started baking sourdough to create flexible work that fits around being a stay-at-home mum and homeschooling her son. What began as a way to support her family while staying present for what matters most became something deeper.
               </p>
               <p className="text-base md:text-lg font-inter text-earth-600 leading-relaxed">
-                She's self-taught. No shortcuts, no trends. Just time, patience, and a love for real bread.
+                She bakes from her small kitchen in Stornoway, a few loaves at a time. Shaping dough in the quiet moments, learning by doing, and chasing that perfect crust. She's self-taught. No shortcuts, no trends. Just time, patience, and a love for real bread.
               </p>
             </div>
           </div>

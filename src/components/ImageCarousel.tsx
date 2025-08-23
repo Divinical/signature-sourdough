@@ -63,9 +63,12 @@ const ImageCarousel = () => {
   return (
     <section id="gallery" className="py-20 px-4 bg-cream-100">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-inter font-semibold text-earth-700 mb-12 text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-inter font-semibold text-earth-700 mb-8 md:mb-12 text-center">
           Fresh from the Oven
         </h2>
+        <p className="text-sm text-earth-500 text-center mb-6 md:hidden">
+          Swipe to see more photos
+        </p>
         <Carousel 
           setApi={setApi}
           className="w-full max-w-3xl mx-auto" 
@@ -96,8 +99,8 @@ const ImageCarousel = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="bg-cream-200 border-cream-300 hover:bg-cream-300 -left-12" />
-          <CarouselNext className="bg-cream-200 border-cream-300 hover:bg-cream-300 -right-12" />
+          <CarouselPrevious className="bg-cream-200 border-cream-300 hover:bg-cream-300 hidden md:flex -left-12" />
+          <CarouselNext className="bg-cream-200 border-cream-300 hover:bg-cream-300 hidden md:flex -right-12" />
         </Carousel>
         
         {/* Active indicator dots */}
