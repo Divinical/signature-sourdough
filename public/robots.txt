@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://signaturesourdough.com/sitemap.xml
+Sitemap: https://signaturesourdough.netlify.app/sitemap.xml
