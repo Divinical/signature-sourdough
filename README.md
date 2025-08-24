@@ -1,17 +1,6 @@
 # 🥖 Signature Sourdough – Landing Page
 
-A clean, single-page website for **Signature Sourdough**, a small-batch artisan bakery based in Stornoway on the Isle of Lewis. This site is being built in collaboration with Nadine (founder/baker) and will showcase her core bread offerings, story, and ordering info.
-
-> Built using [Lovable](https://lovable.dev), with final deployment via Netlify once images and content are approved.
-
----
-
-## 🌐 Live Editor (Lovable)
-Preview or edit the layout via Lovable's interface:
-
-🔗 [Open in Lovable](https://lovable.dev/projects/4bcfe018-4e52-423f-a2ad-0e3685f3f09c)
-
-Changes made in Lovable automatically commit to this repo.
+A clean, single-page website for **Signature Sourdough**, a small-batch artisan bakery based in Stornoway on the Isle of Lewis. This site showcases their core bread offerings, story, and ordering info.
 
 ---
 
@@ -20,7 +9,6 @@ Changes made in Lovable automatically commit to this repo.
 - Vite + React + TypeScript  
 - TailwindCSS  
 - shadcn/ui  
-- Lovable AI Interface  
 
 ---
 
